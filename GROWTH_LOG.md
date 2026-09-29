@@ -6,6 +6,12 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-29 - Adsterra integration unit values populated
+
+- adsterra-integrator replaced the six empty placeholder values in `src/data/ads.ts` with real Adsterra Native Banner, Banner 728x90, 468x60, 320x50, 160x600, and Smartlink codes obtained from the Adsterra publisher dashboard.
+- `src/data/ads.ts` now contains all six fixed ad unit values; no new fields or layout changes were introduced.
+- No change to AGENTS.md, page shells, navigation, GA4, GSC, Cloudflare, or domain configuration.
+
 ### 2026-09-29 - Needle In A Haystack fan guide launched
 
 - one-click-builder assembled 12 primary-locale pages from launch-content-package-v3 (home + 11 fixed pages) plus 3 auxiliary template fixture pages (wiki, faq, about).
