@@ -1,0 +1,152 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "co-op-and-multiplayer",
+    "translationKey": "co-op-and-multiplayer",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/co-op-and-multiplayer",
+    "alternates": {
+      "en-US": "/co-op-and-multiplayer"
+    }
+  },
+  {
+    "id": "collection-needle-types",
+    "translationKey": "collection-needle-types",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/collection-needle-types",
+    "alternates": {
+      "en-US": "/collection-needle-types"
+    }
+  },
+  {
+    "id": "equipment-and-progression",
+    "translationKey": "equipment-and-progression",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/equipment-and-progression",
+    "alternates": {
+      "en-US": "/equipment-and-progression"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "launch-faq-and-troubleshooting",
+    "translationKey": "launch-faq-and-troubleshooting",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq-and-troubleshooting",
+    "alternates": {
+      "en-US": "/faq-and-troubleshooting"
+    }
+  },
+  {
+    "id": "game-modes",
+    "translationKey": "game-modes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/game-modes",
+    "alternates": {
+      "en-US": "/game-modes"
+    }
+  },
+  {
+    "id": "how-to-find-needles",
+    "translationKey": "how-to-find-needles",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/how-to-find-needles",
+    "alternates": {
+      "en-US": "/how-to-find-needles"
+    }
+  },
+  {
+    "id": "languages-and-ui",
+    "translationKey": "languages-and-ui",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/languages",
+    "alternates": {
+      "en-US": "/languages"
+    }
+  },
+  {
+    "id": "disambiguation-vs-legacy-quests",
+    "translationKey": "disambiguation-vs-legacy-quests",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/not-kcd-tarkov-stalker-windrose",
+    "alternates": {
+      "en-US": "/not-kcd-tarkov-stalker-windrose"
+    }
+  },
+  {
+    "id": "release-window-and-price",
+    "translationKey": "release-window-and-price",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date-and-price",
+    "alternates": {
+      "en-US": "/release-date-and-price"
+    }
+  },
+  {
+    "id": "system-requirements",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "identity-overview",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/what-is-needle-in-a-haystack",
+    "alternates": {
+      "en-US": "/what-is-needle-in-a-haystack"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki",
+    "alternates": {
+      "en-US": "/wiki"
+    }
+  }
+]
