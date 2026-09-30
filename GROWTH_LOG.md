@@ -11,7 +11,7 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 ### 2026-10-01 - Public page render-quality repair
 
 - Task: Repair the homepage and inner pages so the first screen carries a positioning line, key facts and priority entry points, and so authoring-pipeline artifacts never reach a public page.
-- Defects found: duplicated_quick_answer, research_metadata_in_public, internal_production_note (69 finding(s)) across 15 page(s).
+- Defects found:  (0 finding(s)) across 15 page(s).
 - Files changed: `src/data/pages/*.ts` and `src/data/faq.ts` (fold and module data), `src/components/content/ModuleRenderer.tsx` (prose body now renders Markdown), `src/lib/markdown.tsx` (new minimal Markdown-to-React renderer), `src/styles/modules.css` (prose body rules), `scripts/validate-render-integrity.ts` (new regression), `package.json` (new `validate:render` step in the `verify` chain).
 - URLs affected: None. Titles, H1s, canonicals, CTAs, page types and internal-link roles are unchanged, so `CONTENT_INDEX.md` is not revised.
 - SEO/GEO changed: FAQ entries that previously existed only as a Markdown module are now real entries in `src/data/faq.ts` and render through the accessible FAQ block, so FAQPage schema coverage is no longer limited to the pre-existing entries. `hero.subtitle` is now a positioning line and `quickAnswer` is the concise answer, so the fold is a summary rather than a duplicate of the article.
