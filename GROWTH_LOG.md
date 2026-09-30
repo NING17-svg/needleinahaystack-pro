@@ -6,19 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
-### 2026-09-29 - Adsterra integration unit values populated
+## Change Log
 
-- adsterra-integrator replaced the six empty placeholder values in `src/data/ads.ts` with real Adsterra Native Banner, Banner 728x90, 468x60, 320x50, 160x600, and Smartlink codes obtained from the Adsterra publisher dashboard.
-- `src/data/ads.ts` now contains all six fixed ad unit values; no new fields or layout changes were introduced.
-- No change to AGENTS.md, page shells, navigation, GA4, GSC, Cloudflare, or domain configuration.
+### 2026-10-01 - Public page render-quality repair
 
-### 2026-09-29 - Needle In A Haystack fan guide launched
+- Task: Repair the homepage and inner pages so the first screen carries a positioning line, key facts and priority entry points, and so authoring-pipeline artifacts never reach a public page.
+- Defects found: duplicated_quick_answer, research_metadata_in_public, internal_production_note (69 finding(s)) across 15 page(s).
+- Files changed: `src/data/pages/*.ts` and `src/data/faq.ts` (fold and module data), `src/components/content/ModuleRenderer.tsx` (prose body now renders Markdown), `src/lib/markdown.tsx` (new minimal Markdown-to-React renderer), `src/styles/modules.css` (prose body rules), `scripts/validate-render-integrity.ts` (new regression), `package.json` (new `validate:render` step in the `verify` chain).
+- URLs affected: None. Titles, H1s, canonicals, CTAs, page types and internal-link roles are unchanged, so `CONTENT_INDEX.md` is not revised.
+- SEO/GEO changed: FAQ entries that previously existed only as a Markdown module are now real entries in `src/data/faq.ts` and render through the accessible FAQ block, so FAQPage schema coverage is no longer limited to the pre-existing entries. `hero.subtitle` is now a positioning line and `quickAnswer` is the concise answer, so the fold is a summary rather than a duplicate of the article.
+- Copy changed: Reader copy no longer refers to the build-now brief, the game-check brief, the research cut-off date or the source-tier labels. Game facts, URLs, keyword intent, ad units and analytics are unchanged.
+- Verification: `npm run verify` (typecheck, lint, template, content, render integrity, IndexNow tests, static export, rendered SEO) passes; a full-text scan of every exported page finds no raw heading markers, pipeline headings, research metadata or literal question/answer labels; a content-conservation check against the previous commit confirms no reader copy, page identity or SEO field was lost.
 
-- one-click-builder assembled 12 primary-locale pages from launch-content-package-v3 (home + 11 fixed pages) plus 3 auxiliary template fixture pages (wiki, faq, about).
-- Site Plan `5a5648ec9bc99fcdd4b8a6aad72141dfaa29f3db9732c7b2d58e4443983a9a85`, content-package status `complete`.
-- All verify checks pass (typecheck, lint, validate:template, validate:content, validate:indexnow, build, validate:rendered-seo).
-- Public content hygiene check passed.
-- V3 route contract validator passed.
-- `npm run indexnow:setup` generated public/indexnow-20847c0c5d9eceb2ab4bca883c0ad4bd.txt for IndexNow submission.
-
-### 2026-08-12 - Static discovery and review freshness baseline added

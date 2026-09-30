@@ -30,7 +30,7 @@ export const launchFaqAndTroubleshootingPage: PageContent = {
       }
     ]
   },
-  "quickAnswer": "Launch Day Quick Answer\n\nNeedle In A Haystack troubleshooting on launch day centers on three confirmed first-day reports: a save-file restore error (\"The farm could not be restored. Your save has been preserved. Please reload it.\"), a Steam runtime ID mismatch (\"Steam is running App ID 5158470, but this build expects 5085740\"), and Steam Cloud / 6-player co-op connection drops. Most fixes start with restarting Steam and verifying the build, then move into Steam Cloud toggle and a bug report on Steam Discussions or the developer Discord if the issue persists.\n\nNeedle In A Haystack Save-File Res",
+  "quickAnswer": "Needle In A Haystack troubleshooting on launch day centers on three confirmed first-day reports: a save-file restore error (\"The farm could not be restored. Your save has been preserved. Please reload it.\"), a Steam runtime ID mismatch (\"Steam is running App ID 5158470, but this build expects 5085740\"), and Steam Cloud / 6-player co-op connection drops. Most fixes start with restarting Steam and verifying the build, then move into Steam Cloud toggle and a bug report on Steam Discussions or the developer Discord if the issue persists.",
   "keyFacts": [
     {
       "label": "Game",
@@ -51,46 +51,64 @@ export const launchFaqAndTroubleshootingPage: PageContent = {
   ],
   "modules": [
     {
-      "id": "quick-answer",
+      "id": "launch-faq-and-troubleshooting-needle-in-a-haystack-save-file-restore-troubleshooting",
       "type": "prose",
-      "heading": "Launch Day Quick Answer",
-      "body": "Launch Day Quick Answer\n\nNeedle In A Haystack troubleshooting on launch day centers on three confirmed first-day reports: a save-file restore error (\"The farm could not be restored. Your save has been preserved. Please reload it.\"), a Steam runtime ID mismatch (\"Steam is running App ID 5158470, but this build expects 5085740\"), and Steam Cloud / 6-player co-op connection drops. Most fixes start with restarting Steam and verifying the build, then move into Steam Cloud toggle and a bug report on Steam Discussions or the developer Discord if the issue persists.\n\nNeedle In A Haystack Save-File Restore Troubleshooting\n\nThe save-file restore error reads \"The farm could not be restored. Your save has been preserved. Please reload it.\" and appears after a Steam Cloud sync or offline / online switch. The save is preserved per the message text; the error is a Steam Cloud desync, not data loss — the most common Needle In A Haystack troubleshooting case as of 2026-09-29.\n\nSave Restore Fix Steps\n\n1. Fully exit the game and the Steam client.\n2. Right-click the game in your Library → Properties → Installed Files → Verify integrity of game files.\n3. Right-click again → Properties → General, uncheck \"Keep game saves in the Steam Cloud for Needle In A Haystack\", launch once to force a local save, then re-check on next launch.\n\nIf the error persists, back up the local save (Steam → userdata → your SteamID → 5085740), let the remote sync slot expire, and let Steam re-upload. If the save still does not load, back up the local folder and post a Steam Discussions thread with your save's timestamp — the developer is responding in English and Chinese as of 2026-09-29.\n\nSteam Runtime ID Mismatch Troubleshooting\n\nA runtime ID mismatch reading \"Steam is running App ID 5158470, but this build expects 5085740\" means Steam launched a different AppID context than the build expects — usually another Steam game in the foreground, the overlay grabbing the wrong context, or a misaligned beta. The correct AppID is 5085740.\n\nRuntime ID Mismatch Fix Steps\n\n1. Quit every other Steam game so a foreign AppID does not leak into the launch context.\n2. Right-click the game → Properties → Betas → select \"No beta selected\" if not on a public beta, then restart Steam.\n3. Launch from the Steam Library entry, not a desktop shortcut, so Steam sets the right AppID context.\n\nThis kind of Needle In A Haystack troubleshooting is benign — a Steam client context bug, not a corrupted game build — and almost always lands on a clean Steam restart plus correct beta selection.\n\nCo-Op Connection and Steam Cloud Sync\n\nThe launch build runs 6-player online co-op on Windows with Steam Cloud syncing save farms. On launch day, players report lobby drops and Cloud stalls, separate from save corruption and runtime bugs.\n\nCo-Op Lobby Connection Drops\n\nCo-op drops on launch day usually trace to Steam Friends being Offline, the host's NAT being strict, or the Steam relay being overloaded at peak launch. Confirm both players are Online, allow Steam through Windows firewall, and have the host restart the game and Steam. If the lobby still fails, switch the host to a different network (mobile hotspot is a useful temporary test) to rule out router-side issues. Tethering can be flaky for a 6-player session.\n\nSteam Cloud Sync Stalls\n\nCloud stalls happen when a second device uploads a competing save at the same moment, or when the local file is large after a long Campaign save. Quit the game on every device, open Steam → Settings → Cloud, disable Steam Cloud for Needle In A Haystack, restart Steam, and re-enable it. The most recent successful launch's save becomes the canonical version. Do not delete the local save before next launch — an accidental delete can race with a remote overwrite.\n\nAchievement Setup and Family Sharing\n\nSteam Achievements are a confirmed launch feature, but the full achievement list has not been published as of 2026-09-29. Enable Steam Cloud and Steam Community in your account settings, then launch once with an Internet connection so the tracker registers your session. The full list of unlock conditions is not public yet, so focus on Campaign mode objectives rather than rumored hidden achievements.\n\nFamily Sharing Caveats\n\nFamily Sharing is supported at launch, but the library owner's Steam language and settings propagate to the guest. The guest cannot launch while the owner is playing another game that locks the family-shared slot, and achievements accrue to the library owner. The purchasing account must launch the game if you want achievements on the correct account.\n\nWhen the Steps Do Not Resolve It\n\nOpen a Steam Discussions thread or Discord ticket when the documented Needle In A Haystack troubleshooting steps do not resolve the issue. Include your Windows version, GPU driver date, Steam client version, and the literal error text. As of 2026-09-29, the developer responds in English and Chinese on Steam Discussions, and the official Discord at https://discord.gg/ZCdSfJBqn3 is monitored for launch-day blockers."
+      "heading": "Needle In A Haystack Save-File Restore Troubleshooting",
+      "body": "The save-file restore error reads \"The farm could not be restored. Your save has been preserved. Please reload it.\" and appears after a Steam Cloud sync or offline / online switch. The save is preserved per the message text; the error is a Steam Cloud desync, not data loss — the most common Needle In A Haystack troubleshooting case."
     },
     {
-      "id": "sources",
-      "type": "callout",
-      "title": "Sources cited",
-      "tone": "tip",
-      "body": "Steam store — Needle In A Haystack (official/store, checked 2026-09-29): confirms Steam Achievements, Steam Cloud, Steam Leaderboards, Family Sharing, 6-player online co-op, and Windows-only system requirements.\nSteam Discussions — Needle In A Haystack (community/video, checked 2026-09-29): source for the save-file restore error message, the Steam runtime ID mismatch error message, developer responses in English and Chinese, and launch-day bug threads.\nSteamDB — AppID 5085740 (reference, checked 2026-09-29): metadata mirror cross-checks AppID, developer attribution, and Steam feature flags.\nGame-check brief — Needle In A Haystack (reference, checked 2026-09-29): launch-day brief recording the Steam rank rise and the build-now decision for AppID 5085740."
+      "id": "launch-faq-and-troubleshooting-save-restore-fix-steps",
+      "type": "prose",
+      "heading": "Save Restore Fix Steps",
+      "body": "1. Fully exit the game and the Steam client.\n2. Right-click the game in your Library → Properties → Installed Files → Verify integrity of game files.\n3. Right-click again → Properties → General, uncheck \"Keep game saves in the Steam Cloud for Needle In A Haystack\", launch once to force a local save, then re-check on next launch.\n\nIf the error persists, back up the local save (Steam → userdata → your SteamID → 5085740), let the remote sync slot expire, and let Steam re-upload. If the save still does not load, back up the local folder and post a Steam Discussions thread with your save's timestamp — the developer is responding in English and Chinese."
     },
     {
-      "id": "internal-links",
-      "type": "entity-grid",
-      "heading": "Related pages",
-      "items": [
-        {
-          "title": "Needle In A Haystack 6-player co-op, single-player split, and platform availability",
-          "summary": "co-op-and-multiplayer ties the Steam Cloud sync and lobby connection drops to the broader 6-player online co-op design.",
-          "href": "/co-op-and-multiplayer/"
-        },
-        {
-          "title": "Needle In A Haystack Windows minimum and recommended system requirements",
-          "summary": "system-requirements gives the spec context for Steam runtime ID and Cloud sync issues on launch day.",
-          "href": "/system-requirements/"
-        },
-        {
-          "title": "Needle In A Haystack release date, price, and Steam unlock timing",
-          "summary": "release-window-and-price links the launch-day troubleshooting context to the Sep 29, 2026 release window.",
-          "href": "/release-date-and-price/"
-        }
-      ]
+      "id": "launch-faq-and-troubleshooting-steam-runtime-id-mismatch-troubleshooting",
+      "type": "prose",
+      "heading": "Steam Runtime ID Mismatch Troubleshooting",
+      "body": "A runtime ID mismatch reading \"Steam is running App ID 5158470, but this build expects 5085740\" means Steam launched a different AppID context than the build expects — usually another Steam game in the foreground, the overlay grabbing the wrong context, or a misaligned beta. The correct AppID is 5085740."
     },
     {
-      "id": "fact-boundaries",
-      "type": "callout",
-      "title": "Fact boundaries",
-      "tone": "caution",
-      "body": "Fact Boundaries\n\n- The save-file restore error message text and the runtime ID mismatch error text are quoted verbatim from Steam Discussions player reports as of 2026-09-29; the literal numbers in the error (App ID 5158470 vs expected 5085740) are reproduced exactly as reported.\n- Steam Cloud, Steam Achievements, Family Sharing, and 6-player online co-op are confirmed launch features per the Steam store page; the full achievement list and any post-launch DLC roadmap are not announced as of 2026-09-29.\n- Console / PS5 / Xbox availability and Steam Deck verified status are not announced as of 2026-09-29; launch-day troubleshooting here applies only to the Windows Steam build.\n- The developer is monitoring Steam Discussions and Discord; this guide does not promise response times or fixes beyond what those official channels publish."
+      "id": "launch-faq-and-troubleshooting-runtime-id-mismatch-fix-steps",
+      "type": "prose",
+      "heading": "Runtime ID Mismatch Fix Steps",
+      "body": "1. Quit every other Steam game so a foreign AppID does not leak into the launch context.\n2. Right-click the game → Properties → Betas → select \"No beta selected\" if not on a public beta, then restart Steam.\n3. Launch from the Steam Library entry, not a desktop shortcut, so Steam sets the right AppID context.\n\nThis kind of Needle In A Haystack troubleshooting is benign — a Steam client context bug, not a corrupted game build — and almost always lands on a clean Steam restart plus correct beta selection."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-co-op-connection-and-steam-cloud-sync",
+      "type": "prose",
+      "heading": "Co-Op Connection and Steam Cloud Sync",
+      "body": "The launch build runs 6-player online co-op on Windows with Steam Cloud syncing save farms. On launch day, players report lobby drops and Cloud stalls, separate from save corruption and runtime bugs."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-co-op-lobby-connection-drops",
+      "type": "prose",
+      "heading": "Co-Op Lobby Connection Drops",
+      "body": "Co-op drops on launch day usually trace to Steam Friends being Offline, the host's NAT being strict, or the Steam relay being overloaded at peak launch. Confirm both players are Online, allow Steam through Windows firewall, and have the host restart the game and Steam. If the lobby still fails, switch the host to a different network (mobile hotspot is a useful temporary test) to rule out router-side issues. Tethering can be flaky for a 6-player session."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-steam-cloud-sync-stalls",
+      "type": "prose",
+      "heading": "Steam Cloud Sync Stalls",
+      "body": "Cloud stalls happen when a second device uploads a competing save at the same moment, or when the local file is large after a long Campaign save. Quit the game on every device, open Steam → Settings → Cloud, disable Steam Cloud for Needle In A Haystack, restart Steam, and re-enable it. The most recent successful launch's save becomes the canonical version. Do not delete the local save before next launch — an accidental delete can race with a remote overwrite."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-achievement-setup-and-family-sharing",
+      "type": "prose",
+      "heading": "Achievement Setup and Family Sharing",
+      "body": "Steam Achievements are a confirmed launch feature, but the full achievement list has not been published. Enable Steam Cloud and Steam Community in your account settings, then launch once with an Internet connection so the tracker registers your session. The full list of unlock conditions is not public yet, so focus on Campaign mode objectives rather than rumored hidden achievements."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-family-sharing-caveats",
+      "type": "prose",
+      "heading": "Family Sharing Caveats",
+      "body": "Family Sharing is supported at launch, but the library owner's Steam language and settings propagate to the guest. The guest cannot launch while the owner is playing another game that locks the family-shared slot, and achievements accrue to the library owner. The purchasing account must launch the game if you want achievements on the correct account."
+    },
+    {
+      "id": "launch-faq-and-troubleshooting-when-the-steps-do-not-resolve-it",
+      "type": "prose",
+      "heading": "When the Steps Do Not Resolve It",
+      "body": "Open a Steam Discussions thread or Discord ticket when the documented Needle In A Haystack troubleshooting steps do not resolve the issue. Include your Windows version, GPU driver date, Steam client version, and the literal error text., the developer responds in English and Chinese on Steam Discussions, and the official Discord at https://discord.gg/ZCdSfJBqn3 is monitored for launch-day blockers."
     }
   ],
   "faqIds": [

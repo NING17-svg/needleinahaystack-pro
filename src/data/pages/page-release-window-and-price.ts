@@ -30,7 +30,7 @@ export const releaseWindowAndPricePage: PageContent = {
       }
     ]
   },
-  "quickAnswer": "Quick Answer\n\nNeedle In A Haystack released on Steam on September 29, 2026 under AppID 5085740. NoGlyph confirmed the date through Steam Discussions. The Steam store price has not been announced as of 2026-09-29; the page showed a planned-unlock message at launch. Search users who add the simulator word to their query land on the same launch title.\n\nNeedle In A Haystack Release Date And Launch Window\n\nThe release date is confirmed and dated:\n\n- Release date: September 29, 2026\n- Steam AppID: 5085740\n- Steam store URL: https://store.steampowered.com/app/5085740\n- Steam metadata mirror: https://",
+  "quickAnswer": "Needle In A Haystack released on Steam on September 29, 2026 under AppID 5085740. NoGlyph confirmed the date through Steam Discussions. The Steam store price has not been announced; the page showed a planned-unlock message at launch. Search users who add the simulator word to their query land on the same launch title.",
   "keyFacts": [
     {
       "label": "Release date",
@@ -51,46 +51,28 @@ export const releaseWindowAndPricePage: PageContent = {
   ],
   "modules": [
     {
-      "id": "quick-answer",
+      "id": "release-window-and-price-needle-in-a-haystack-release-date-and-launch-window",
       "type": "prose",
-      "heading": "Quick Answer",
-      "body": "Quick Answer\n\nNeedle In A Haystack released on Steam on September 29, 2026 under AppID 5085740. NoGlyph confirmed the date through Steam Discussions. The Steam store price has not been announced as of 2026-09-29; the page showed a planned-unlock message at launch. Search users who add the simulator word to their query land on the same launch title.\n\nNeedle In A Haystack Release Date And Launch Window\n\nThe release date is confirmed and dated:\n\n- Release date: September 29, 2026\n- Steam AppID: 5085740\n- Steam store URL: https://store.steampowered.com/app/5085740\n- Steam metadata mirror: https://steamdb.info/app/5085740/\n\nThe SteamDB record mirrors the September 29, 2026 release date, and Steam Discussions show developer activity on launch day, including a developer post that names the Campaign and Free Play modes. The launch window is therefore a single-day release rather than an early-access window or a staggered regional launch.\n\nPrice Status As Of 2026-09-29\n\nThe Steam store page did not display a numeric price at the research snapshot. The page showed a planned-unlock notice indicating the price would publish at a scheduled unlock time near launch. The price is therefore not announced as of 2026-09-29. NoGlyph has not posted a separate price announcement on Steam Discussions, and the SteamDB metadata mirror does not display a price field.\n\nUntil a numeric price appears on the Steam store, an announcement lands on Steam Discussions, or a regional price updates on SteamDB, treat any third-party price as not announced.\n\nThe Simulator Alias And Why It Matters\n\nMany search users type the simulator word as a brand extension even though the official Steam title is just Needle In A Haystack. The Steam store header reads \"Needle In A Haystack\" without the simulator word. The simulator phrase does not point at a separate product or a DLC, and any related autocomplete variations all resolve to the same Steam game by NoGlyph.\n\nIf you searched using the simulator phrase, the launch date and the price status on this page apply to the same game. The release date was September 29, 2026 and the price is not announced as of 2026-09-29.\n\nCross-Region Price Caveat\n\nSteam prices can vary by country and storefront currency, and the SteamDB price history is the place to verify a specific regional price after the planned-unlock moment. This page records the global status (price not announced as of 2026-09-29) rather than a single regional number. If you need a country-specific price, check the Steam store for your region after the price is published."
+      "heading": "Needle In A Haystack Release Date And Launch Window",
+      "body": "The release date is confirmed and dated:\n\n- Release date: September 29, 2026\n- Steam AppID: 5085740\n- Steam store URL: https://store.steampowered.com/app/5085740\n- Steam metadata mirror: https://steamdb.info/app/5085740/\n\nThe SteamDB record mirrors the September 29, 2026 release date, and Steam Discussions show developer activity on launch day, including a developer post that names the Campaign and Free Play modes. The launch window is therefore a single-day release rather than an early-access window or a staggered regional launch."
     },
     {
-      "id": "sources",
-      "type": "callout",
-      "title": "Sources cited",
-      "tone": "tip",
-      "body": "Steam Store - Needle In A Haystack (official/store, checked 2026-09-29): confirmed release date and the planned-unlock price notice.\nSteamDB - AppID 5085740 (wiki/reference, checked 2026-09-29): release date mirror and metadata.\nGame-check brief - Needle In A Haystack (wiki/reference, checked 2026-09-29): launch-window status and momentum evidence."
+      "id": "release-window-and-price-price-status-as-of-2026-09-29",
+      "type": "prose",
+      "heading": "Price Status As Of 2026-09-29",
+      "body": "The Steam store page did not display a numeric price at the research snapshot. The page showed a planned-unlock notice indicating the price would publish at a scheduled unlock time near launch. The price is therefore not announced. NoGlyph has not posted a separate price announcement on Steam Discussions, and the SteamDB metadata mirror does not display a price field.\n\nUntil a numeric price appears on the Steam store, an announcement lands on Steam Discussions, or a regional price updates on SteamDB, treat any third-party price as not announced."
     },
     {
-      "id": "internal-links",
-      "type": "entity-grid",
-      "heading": "Related pages",
-      "items": [
-        {
-          "title": "What Is Needle In A Haystack",
-          "summary": "confirm developer, publisher, and AppID before purchase decisions.",
-          "href": "/what-is-needle-in-a-haystack/"
-        },
-        {
-          "title": "Needle In A Haystack co-op and multiplayer",
-          "summary": "check party size and platform availability alongside the price decision.",
-          "href": "/co-op-and-multiplayer/"
-        },
-        {
-          "title": "Needle In A Haystack system requirements",
-          "summary": "confirm your Windows PC meets the minimum spec before downloading.",
-          "href": "/system-requirements/"
-        }
-      ]
+      "id": "release-window-and-price-the-simulator-alias-and-why-it-matters",
+      "type": "prose",
+      "heading": "The Simulator Alias And Why It Matters",
+      "body": "Many search users type the simulator word as a brand extension even though the official Steam title is just Needle In A Haystack. The Steam store header reads \"Needle In A Haystack\" without the simulator word. The simulator phrase does not point at a separate product or a DLC, and any related autocomplete variations all resolve to the same Steam game by NoGlyph.\n\nIf you searched using the simulator phrase, the launch date and the price status on this page apply to the same game. The release date was September 29, 2026 and the price is not announced."
     },
     {
-      "id": "fact-boundaries",
-      "type": "callout",
-      "title": "Fact boundaries",
-      "tone": "caution",
-      "body": "Fact Boundaries\n\n- Current-game only. Release date is confirmed as September 29, 2026. Price is not announced as of 2026-09-29 and must not be quoted from third-party listings.\n- Console availability is not announced as of 2026-09-29; do not present Xbox or PS5 as confirmed platforms.\n- The simulator alias is a user-typed brand extension; it is not a separate game, DLC, or SKU."
+      "id": "release-window-and-price-cross-region-price-caveat",
+      "type": "prose",
+      "heading": "Cross-Region Price Caveat",
+      "body": "Steam prices can vary by country and storefront currency, and the SteamDB price history is the place to verify a specific regional price after the planned-unlock moment. This page records the global status (price not announced) rather than a single regional number. If you need a country-specific price, check the Steam store for your region after the price is published."
     }
   ],
   "faqIds": [
